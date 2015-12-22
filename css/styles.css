@@ -1,3 +1,24 @@
+body {
+  margin: 2rem; }
+
+.switch-on {
+  position: absolute;
+  left: -55px;
+  top: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 9px; }
+
+.switch-off {
+  position: absolute;
+  left: -25px;
+  top: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 9px; }
+
+
+
 .image-container img {
   display: none;
 }
