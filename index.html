@@ -6,30 +6,108 @@
   <title>Testerino</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
+  <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
   <link rel="stylesheet" href="http://cdn.foundation5.zurb.com/foundation.css">
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="./css/style.css"> <!-- Resource style -->
 
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
-
 <body>
+  <header class="cd-header">
+    <a href="#0" class="cd-logo"><img src="img/cd-logo.svg" alt="Logo"></a>
+    <a href="#0" class="cd-3d-nav-trigger">
+      Menu
+      <span></span>
+    </a>
+  </header> <!-- .cd-header -->
 
-  <div class="switch round">
-    <p>Turn me on!</p>
-    <input id="on-off" type="checkbox">
-      <label for="on-off">
-        <span class="switch-on">ON</span>
-        <span class="switch-off">OFF</span>
-    </label>
-  </div>
+  <main>
+    <h1>3D Rotating Navigation</h1>
+    <!-- all your content here -->
+  </main>
 
-  <div class="image-container">
-    <img src="./img/dickbutt.jpg" alt="Dick Butt is King">
+  <nav class="cd-3d-nav-container">
+    <ul class="cd-3d-nav">
+      <li class="cd-selected">
+        <a href="#0">Dashboard</a>
+      </li>
+
+      <li>
+        <a href="#0">Projects</a>
+      </li>
+
+      <li>
+        <a href="#0">Images</a>
+      </li>
+
+      <li>
+        <a href="#0">Settings</a>
+      </li>
+
+      <li>
+        <a href="#0">New</a>
+      </li>
+    </ul> <!-- .cd-3d-nav -->
+
+    <span class="cd-marker color-1"></span>
+  </nav> <!-- .cd-3d-nav-container -->
+  <!--
+<section>
+  <ul class="multiple-items">
+      <li>
+        <img src="./img/dickbutt.jpg" alt="Dick Butt is King">
+      </li>
+      <li>
+        <img src="./img/dickbutt.jpg" alt="Dick Butt is King">
+      </li>
+      <li>
+        <img src="./img/dickbutt.jpg" alt="Dick Butt is King">
+      </li>
+      <li>
+        <img src="./img/dickbutt.jpg" alt="Dick Butt is King">
+      </li>
+      <li>
+        <img src="./img/dickbutt.jpg" alt="Dick Butt is King">
+      </li>
+      <li>
+        <img src="./img/dickbutt.jpg" alt="Dick Butt is King">
+      </li>
+      <li>
+        <img src="./img/dickbutt.jpg" alt="Dick Butt is King">
+      </li>
+  </ul>
+  <div class="text-center" id="target"></div>
+</section>
+-->
+<section role="main" class="scroll-container">
+  <div class="row medium-uncollapse large-collapse">
+    <div class="small-3 large-3 columns">
+      <div class="switch round">
+        <p>Switch!</p>
+        <input id="on-off" type="checkbox">
+        <label for="on-off" id="switch">
+          <span class="switch-on">ON</span>
+          <span class="switch-off">OFF</span>
+        </label>
+      </div>
+    </div>
+    <div class="small-9 large-9 columns">
+      <div class="small-6 large-6 small-offset-3 large-offset-3 columns">
+        <div class="image-container">
+          <img src="./img/dickbutt.jpg" alt="Dick Butt is King">
+        </div>
+      </div>
+    </div>
   </div>
+</section>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/slick.js"></script>
   <script src="http://cdn.foundation5.zurb.com/foundation.js"></script>
+  <script src="./js/main.js"></script> <!-- Resource jQuery -->
   <script src="./js/scripts.js"></script>
 </body>
 </html>
